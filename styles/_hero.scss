@@ -1,0 +1,73 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @media (max-width:1000px){
+        background-position:center ;
+        text-align: center;
+    }
+
+    &-content-wrapper{
+        margin-left: 200px;
+
+        
+        @media (max-width:1000px){
+            margin: auto;
+        }
+        
+        h2, h4{
+            color: $white;
+            animation: drop 1000ms ease-in-out;
+        }
+
+        h2{
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-family: $font-bold;
+        }
+
+        h4{
+            font-size: 1.375rem;
+            font-family: $font-light;
+        }
+        
+        .btn{
+            margin-top: 50px;
+            animation: drop 1000ms ease-in-out;
+        }
+    }
+
+    &-index{
+        background-image: url(../img/hero-image.jpg);
+        
+        
+    }
+
+    &-vintage{
+        background-image: url(../img/michael-jordan.png);
+        h2{
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-family: $font-bold;
+            background: rgb(34,33,132);
+            background: radial-gradient(circle, rgba(34,33,132,1) 0%, rgba(185,55,80,1) 48%, rgba(250,197,159,1) 100%);
+        }
+
+        .btn{
+            color: $white;
+            background: rgb(34,33,132);
+            background: radial-gradient(circle, rgba(34,33,132,1) 0%, rgba(185,55,80,1) 48%, rgba(250,197,159,1) 100%);
+
+            &:hover{
+                background: rgb(34,33,132);
+                background: radial-gradient(circle, rgba(250,197,159,1) 0%, rgba(185,55,80,1) 48%, rgba(34,33,132,1) 100%);
+            }
+        }
+    }
+
+
+}

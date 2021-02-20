@@ -1,0 +1,103 @@
+.gallery{
+    display: grid;
+    grid-template-columns:  200px 1fr;
+    min-height: 100vh;
+    position: relative;
+    padding: 50px 150px;
+
+    @media (max-width:1500px) {
+        padding: 10px;
+        grid-template-columns: 1fr;
+    }
+    h2{
+        grid-column:span 3;
+    }
+
+    &-aside{
+        grid-column: 1;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+
+        @media (max-width:800px) {
+            display: block;
+            grid-column: span 4;
+            flex-direction: row;
+            h3 {
+                text-align: center;
+            }
+            ul{
+                display: flex;
+                justify-content: space-around;
+            
+            }
+        }
+
+        h3{
+            font-family: $font-bold;
+            text-transform: uppercase;
+        }
+        ul{
+            padding-bottom: 10px;
+            list-style: none;
+            font-family: $font-light;
+            a{
+                color: $black;
+                line-height: 2;
+                
+                &:hover{
+                    color: $gray;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &-products{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+
+        @media (max-width:800px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .card{
+
+            &-title{
+                font-family: $font-light;
+                font-size: 1.3rem;
+
+                
+                @media (max-width:1000px){
+                    font-size: 1rem;
+                }
+            }
+            &-subtitle{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-family: $font-bold;
+                font-size: 1.5rem;
+
+                @media (max-width:1000px){
+                    font-size: 1.2rem;
+                }
+                .btn{
+                    background-color: $primary-color;
+                    color: $white;
+                    border: 2px solid $primary-color;
+                        
+                        @media (max-width:1000px){
+                            width: 50%;
+                        }
+                    &:hover{
+                        background-color: $white;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+

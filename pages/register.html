@@ -8,110 +8,122 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <title>Iniciar sesión | Crear una cuenta | Bansky</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="gender-wrapper">
-                <ul>
-                    <li class="list-toggle">
-                        <a href="">Hombre</a>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times disabled"></i>
+            </div>
 
-                        <ul class="list-options">
-                            <li>
-                                <a href="men.html"><img src="../img/running-man.jpg" alt="" class="image-fit"></a>
-                            </li>
-                            <li>
-                                <a href="men.html">Calzado</a>
-                                <ul>
-                                    <li><a href="men.html">Trainning</a></li>
-                                    <li><a href="men.html">Skate</a></li>
-                                    <li><a href="men.html">Ojotas</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="men.html">Indumentaria</a>
-                                <ul>
-                                    <li><a href="men.html">Remeras</a></li>
-                                    <li><a href="men.html">Camperas</a></li>
-                                    <li><a href="men.html">Musculosas</a></li>
-                                    <li><a href="men.html">Buzos</a></li>
-                                    <li><a href="men.html">Pantalones</a></li>
-                                    <li><a href="men.html">Shorts</a></li>
-                                    <li><a href="men.html"></a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="men.html">Accesorios</a>
-                                <ul>
-                                    <li><a href="men.html">Gorras</a></li>
-                                    <li><a href="men.html">Mochilas</a></li>
-                                    <li><a href="men.html">Relojes</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+            <div class="menu">
 
-                    <li class="list-toggle">
-                        <a href="women.html">Mujer</a>
-                        <ul class="list-options">
-                            <li>
-                                <a href="women.html"><img src="../img/running-woman.jpg" alt="" class="image-fit scale-image"></a>
-                            </li>
+                <div class="gender-wrapper">
+                    <ul>
+                        <li class="gender-items gender-items1">
+                            <p id="category-men">Hombre</p>
 
-                            <li>
-                                <a href="women.html">Calzado</a>
-                                <ul>
-                                    <li><a href="women.html">Trainning</a></li>
-                                    <li><a href="women.html">Skate</a></li>
-                                    <li><a href="women.html">Ojotas</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="women.html">Indumentaria</a>
-                                <ul>
-                                    <li><a href="women.html">Remeras</a></li>
-                                    <li><a href="women.html">Camperas</a></li>
-                                    <li><a href="women.html">Musculosas</a></li>
-                                    <li><a href="women.html">Buzos</a></li>
-                                    <li><a href="women.html">Calzas</a></li>
-                                    <li><a href="women.html">Shorts</a></li>
-                                    <li><a href="women.html">Tops</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="women.html">Accesorios</a>
-                                <ul>
-                                    <li><a href="women.html">Gorras</a></li>
-                                    <li><a href="women.html">Mochilas</a></li>
-                                    <li><a href="women.html">Relojes</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                            <ul class="list-options" id="category">
+                                <li>
+                                    <a href="men.html"><img src="../img/running-man.jpg" alt="" class="image-fit"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="category">Calzado</a>
+                                    <ul>
+                                        <li><a href="men.html">Trainning</a></li>
+                                        <li><a href="men.html">Skate</a></li>
+                                        <li><a href="men.html">Ojotas</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="category">Indumentaria</a>
+                                    <ul>
+                                        <li><a href="men.html">Remeras</a></li>
+                                        <li><a href="men.html">Camperas</a></li>
+                                        <li><a href="men.html">Musculosas</a></li>
+                                        <li><a href="men.html">Buzos</a></li>
+                                        <li><a href="men.html">Pantalones</a></li>
+                                        <li><a href="men.html">Shorts</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="category">Accesorios</a>
+                                    <ul>
+                                        <li><a href="men.html">Gorras</a></li>
+                                        <li><a href="men.html">Mochilas</a></li>
+                                        <li><a href="men.html">Relojes</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="gender-items gender-items2">
+                            <p class="gender-women" id="categoryWomen">Mujer</p>
+
+                            <ul class="list-options">
+                                <li>
+                                    <a href="women.html"><img src="../img/running-woman.jpg" alt=""
+                                            class="image-fit scale-image"></a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="">Calzado</a>
+                                    <ul>
+                                        <li><a href="women.html">Trainning</a></li>
+                                        <li><a href="women.html">Skate</a></li>
+                                        <li><a href="women.html">Ojotas</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="">Indumentaria</a>
+                                    <ul>
+                                        <li><a href="women.html">Remeras</a></li>
+                                        <li><a href="women.html">Camperas</a></li>
+                                        <li><a href="women.html">Musculosas</a></li>
+                                        <li><a href="women.html">Buzos</a></li>
+                                        <li><a href="women.html">Calzas</a></li>
+                                        <li><a href="women.html">Shorts</a></li>
+                                        <li><a href="women.html">Tops</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="">Accesorios</a>
+                                    <ul>
+                                        <li><a href="women.html">Gorras</a></li>
+                                        <li><a href="women.html">Mochilas</a></li>
+                                        <li><a href="women.html">Relojes</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="store-wrapper">
+                    <ul>
+                        <li>
+                            <a href="vintage.html">Vintage</a>
+                        </li>
+
+                        <li>
+                            <a href="../index.html#stores">Tiendas</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="logo-wrapper">
                 <a href="../index.html"><img src="../img/logo.png" alt="" width="100px"></a>
             </div>
-            <div class="store-wrapper">
-                <ul>
-                    <li>
-                        <a href="vintage.html">Vintage</a>
-                    </li>
 
-                    <li>
-                        <a href="../index.html#stores">Tiendas</a>
-                    </li>
-                </ul>
-            </div>
             <div class="icon-wrapper">
                 <a href="register.html"><i class="far fa-user"></i></a>
                 <a href=""><i class="fas fa-shopping-cart"><span>0</span></i></a>
             </div>
-            </div>
+
+
         </nav>
     </header>
 
@@ -223,6 +235,7 @@
             <a href=""><img src="../img/logo-blanco.png" alt=""></a>
         </div>
     </footer>
+    <script src="../js/burger.js"></script>
 </body>
 
 </html>

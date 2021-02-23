@@ -175,7 +175,7 @@ nav .gender-wrapper ul a, nav .store-wrapper ul a {
     margin-right: 20px;
     padding-top: 20px;
   }
-  nav .gender-wrapper ul a:hover, nav .store-wrapper ul a:hover {
+  nav .gender-wrapper ul a:hover, nav .gender-wrapper ul p:hover, nav .store-wrapper ul a:hover, nav .store-wrapper ul p:hover {
     text-decoration: underline;
   }
   nav .gender-wrapper ul > li, nav .store-wrapper ul > li {

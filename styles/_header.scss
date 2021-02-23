@@ -159,6 +159,9 @@ nav{
             font-size: 1.875rem;
             margin: 10px;
             position: relative;
+            @media(max-width:1000px){
+                font-size:1.5rem;
+            }
             & span{
                 font-size:0.8125rem;
                 font-family: $font-bold;
@@ -166,6 +169,9 @@ nav{
                 position:absolute;
                 left: 48%;
                 top: 16%;
+                @media(max-width:1000px){
+                    font-size:0.7rem;
+                }
             }
         }
     }

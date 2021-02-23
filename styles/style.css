@@ -208,6 +208,12 @@ nav .icon-wrapper i, nav .burger i {
   position: relative;
 }
 
+@media (max-width: 1000px) {
+  nav .icon-wrapper i, nav .burger i {
+    font-size: 1.5rem;
+  }
+}
+
 nav .icon-wrapper i span, nav .burger i span {
   font-size: 0.8125rem;
   font-family: "Hurme Geometric Sans Bold";
@@ -215,6 +221,12 @@ nav .icon-wrapper i span, nav .burger i span {
   position: absolute;
   left: 48%;
   top: 16%;
+}
+
+@media (max-width: 1000px) {
+  nav .icon-wrapper i span, nav .burger i span {
+    font-size: 0.7rem;
+  }
 }
 
 nav .burger {
